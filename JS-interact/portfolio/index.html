@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/simplelightbox@2.14.2/dist/simple-lightbox.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="portfolio">
+      <div class="filters">
+        <ul>
+          <li data-filter="all" class="active">Tous les projets</li>
+          <li data-filter="cd">Création & Design</li>
+          <li data-filter="jv">Jeux Vidéo</li>
+          <li data-filter="3d">Animation 3D</li>
+          <li data-filter="dw">Développement web</li>
+          <li data-filter="cdeb">Communication digitale</li>
+        </ul>
+      </div>
+      <div class="portfolio-elements">
+        <div class="card filtr-item" data-category="jv">
+          <div class="card-header">
+            <p class="card-title">Dofus</p>
+            <div class="card-axe">Jeux Vidéo</div>
+          </div>
+
+          <a href="./dofus.jpeg">
+            <img src="./dofus.jpeg" alt="dofus" />
+          </a>
+        </div>
+<div class="card filtr-item" data-category="3d">
+          <div class="card-header">
+            <p class="card-title">The Last Of Us</p>
+            <div class="card-axe">Jeux Vidéo</div>
+          </div>
+
+          <a href="./tlou.webp">
+            <img src="./tlou.webp" alt="tlou" />
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/filterizr/2.2.4/vanilla.filterizr.min.js"
+      integrity="sha512-MMprw2AB5GAiQmXXEz5JYiGq2waU0iqD7Whj33m1w0V6Zzt1wyTFnr6rxWW8mfdQ/VksbUkU5c8sVGlO+3stew=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/simplelightbox@2.14.2/dist/simple-lightbox.min.js"></script>
+
+    <!-- Script en javascript -->
+    <script src="main.js"></script>
+  </body>
+</html>
